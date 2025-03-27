@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>↓↓↓↓↓↓</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            font-family: "Yu Gothic", sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #A7D8FF, #72C1FF); /* 水色グラデーション */
+            height: 100vh; /* スマホ画面全体にフィット */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* 背景をぼかして文字を見やすくする */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* 透明な黒フィルター */
+            backdrop-filter: blur(5px); /* ぼかし効果 */
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            animation: arrowMove 1.5s infinite alternate ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #56CCF2, #2F80ED); /* 水色系ボタン */
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(87, 170, 255, 0.5);
+            transition: 0.3s;
+            position: relative;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #2F80ED, #56CCF2);
+            box-shadow: 0 0 20px rgba(87, 170, 255, 0.8);
+            transform: scale(1.08) rotate(2deg);
+        }
+
+        .btn::after {
+            content: "💖";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 16px;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @keyframes arrowMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(10px); }
+        }
+    </style>
+    <script>
+        // ページが読み込まれて3秒後に自動的に遷移
+        setTimeout(function() {
+            window.location.href = "https://spsp.jp?url=https://appollo.jp/api/lp/?acd=v6dX4s_s_ky2GeIkvVxfQGzxg&title="; // リダイレクト先のURL
+        }, 3000); // 3000ミリ秒 = 3秒
+    </script>
+</head>
+<body>
+
+    <div>
+        <h1>↓↓↓↓↓↓</h1>
+        <a href="https://ad-nex.com/u/ahs7cc8p94wv" class="btn">タップで表示</a>
+    </div>
+
+</body>
+</html>
